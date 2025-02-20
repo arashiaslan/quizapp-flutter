@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatelessWidget {
-  const SplashScreen({super.key});
+  const SplashScreen(this.startQuiz, {super.key});
+  final void Function() startQuiz;
+
   @override
   Widget build(context) {
     return Center(
@@ -24,11 +26,12 @@ class SplashScreen extends StatelessWidget {
         Text(
           "Who Am I ?",
           style: TextStyle(
-              fontSize: 40, color: const Color.fromARGB(255, 200, 213, 231)),
+              fontSize: 40, color: const Color.fromARGB(255, 255, 255, 255)),
+              
         ),
         SizedBox(height: 30),
         OutlinedButton.icon(
-          onPressed: () {},
+          onPressed: startQuiz,
           style: OutlinedButton.styleFrom(
             foregroundColor: Colors.white
           ),
