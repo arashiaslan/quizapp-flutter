@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen(this.startQuiz, {super.key});
@@ -25,10 +26,11 @@ class SplashScreen extends StatelessWidget {
         // ),
         Text(
           "Who Am I ?",
-          style: TextStyle(
-              fontSize: 40, color: const Color.fromARGB(255, 255, 255, 255)),
-              
+          style: GoogleFonts.oswald(
+              fontSize: 40, color: const Color.fromARGB(255, 255, 255, 255)
+          ),
         ),
+        Text("Philosophical Quiz about Existensialism", style: GoogleFonts.lato(color: Colors.white)),
         SizedBox(height: 30),
         OutlinedButton.icon(
           onPressed: startQuiz,
