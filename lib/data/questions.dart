@@ -1,6 +1,6 @@
 import 'package:quizzapp/models/quiz_question.dart';
 
-const question = [
+const questions = [
   QuizQuestion(
     "What is Name?", 
     [
